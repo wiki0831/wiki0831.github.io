@@ -1,0 +1,103 @@
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300|Sunflower:300" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type = "text/javascript" src = "particleMOD.js"></script>
+<style>
+$c1: #674172;
+$c2: #ffffff;
+
+#particles {
+    height: 200%;
+    height: 100vh;
+    background: #ffffff;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.display {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+.button-one {
+  padding:20px 60px;
+  outline: none;
+  background-color: #333333;
+  border: none;
+  border-radius:5px;
+  color: white;
+  box-shadow: 0 9px #ffcccc;
+  font-family: 'Sunflower', sans-serif;
+}
+.button-one:hover{
+  background-color: #666666;
+}
+
+</style>
+
+<div id="particles"></div>
+<div class="display">
+    <a target="_blank" href="http://wiki0831.com">
+  <img src="weilogo.png" style="width:233px;height:233px;">
+</a>
+    <p>Built With
+        <br>
+        <br>Digital Ocean & Docker & NGINX
+        <br>
+        <br>2018.06.12 Weiqi Yuan</p>
+  
+    <button class="button-one" onclick="getLocation()">Get Location</button>
+
+    <p>Here is your current location</p>
+    <p> Latitude , Longitude</p>
+    <p id="currentLocation"><br></p>
+    
+    <p>Location History</p>
+    <p id="locationHistory"></p>
+
+    <script>
+    var x = document.getElementById("currentLocation");
+    var y = document.getElementById("locationHistory");
+    var counter = 0;
+    var locations = [];
+
+    function getLocation() {
+        console.log("Getting Location");
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+            dispArray();
+      var output = locations.slice(1,counter+1).reverse().join("");
+            y.innerHTML = output;
+        } else {
+            x.innerHTML = "Geolocation is supported by this browser";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = Number(position.coords.latitude).toFixed(10)+" , "+ Number(position.coords.longitude).toFixed(10)+ "<br>";
+    }
+
+    function dispArray(){
+          locations[counter] = x.innerHTML;
+            console.log("1");
+            console.log(locations.toString());
+            counter++;
+    }
+    </script>
+
