@@ -1,6 +1,7 @@
 figure.profileContainer {
   font-family: 'Poiret One', cursive;
   position: relative;
+  align-items: center;
   display: inline-block;
   margin: 10px;
   min-width: 220px;
@@ -9,7 +10,6 @@ figure.profileContainer {
   width: 100%;
   overflow: hidden;
   text-align: center;
-  background: #ffffff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
