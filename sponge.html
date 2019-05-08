@@ -28,11 +28,11 @@
   <div class="reveal">
     <div class="slides">
       <section>
-        <section data-background-iframe="https://poly.google.com/view/1veiAuf5oIM/embed" data-background-interactive>
-          <div style="position: relative; width: 20%; right: 0; padding: 20px; font-size: 20px; text-align: left;">
+        <section data-background-iframe=" https://poly.google.com/view/1veiAuf5oIM/embed" data-background-interactive>
+          <div style="position: relative; width: 20%; right: 0; padding: 20px; font-size: 20px; text-align: center;">
             <h2>Menger's Sponge</h2>
-            <h3>Fractals & Combinatorics</h3>
-            <p>By Weiqi Yuan<p>
+            <p>A step-by-step tutorial to model and 3D print fractals</p>
+            <p>By Weiqi Yuan</p>
           </div>
           <div style="position: absolute; width: 100%; right: 0; padding: 20px; font-size: 20px; text-align: right;">
             <br>
@@ -43,12 +43,13 @@
       </section>
 
       <section>
-        <h3>About Me</h3>
+        <h3>Weiqi Yuan</h3>
         <ul>
           <li>Programming / Web Development</li>
           <li>Photography / Videography</li>
-          <li>3D Modeling / 3D Priting</li>
-          <li>Travel</li>
+          <li>HCI / Game Development / VR</li>
+          <li>3D Modeling / 3D Printing</li>
+          <li>Travel / Road Trip</li>
         </ul>
         <p>
           <a href="https://wiki0831.github.io" target="_blank">Check out my website!</a>
@@ -58,10 +59,107 @@
       <section>
         <h3>Statement of Interest</h3>
         <p style="text-align: left;">
-          I have a strong interest in visual, and fractal is one of the cool geometry patterns that draws my attention. Combining my knowledge and skills in combinatorics, programming, 3D modeling and 3D printing, i made this website to demonstrate
-          a step-by-step process of how I modeled level 2 & level 3 Menger's Sponge and 3D printed them as a cool-looking decorative object.
+          I have a strong interest in visual, and fractal is one of the cool geometry patterns that draws my attention. Combining my knowledge and skills in combinatorics, programming, 3D modeling and 3D printing, I made this slidedeck to
+          demonstrate
+          a step-by-step process of how I modeled level 0, 1, 2 & 3 Menger's Sponge and 3D printed them as a cool-looking decorative object.
         </p>
       </section>
+
+      <section>
+        <h3>Overview</h3>
+        <ol>
+          <li>Understand Fractal and Recursion</li>
+          <li>3D Model Fractal Objects using CAD</li>
+          <li>Setup 3D printer and print it</li>
+          <li>(Optional) Distribute design</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Fractals</h2>
+        <p>- a never-ending pattern</p>
+        <iframe src="https://giphy.com/embed/3o6fJbxcUKYMDM4uLC" width="250px" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <pre>"In mathematics, a fractal is a subset of a Euclidean space for which the Hausdorff dimension strictly exceeds the topological dimension." <a href="https://en.wikipedia.org/wiki/Fractal">Read more about fractal</a></pre>
+      </section>
+
+      <section>
+        <h2>Recursion CHP.7</h2>
+        <p>- the process of repeating in a self-similar way</p>
+        <iframe src="https://giphy.com/embed/xlTwaFb20TVjW" width="250px" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <pre>"Recursion occurs when a thing is defined in terms of itself or of its type. It is used in a variety of disciplines ranging from linguistics to logic. " <a href="https://en.wikipedia.org/wiki/Recursion">Read more about recursion</a></pre>
+      </section>
+
+      <section data-background-iframe="https://repl.it/@wiki0831/recursive-tree?lite=true" data-background-interactive>
+        <div style="position: absolute; width: 20%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+          <h2>Tree Fractal DEMO</h2>
+          <h4>Graph fractal using recursion</h4>
+          <p>This is a simple recursive code that will draw a tree fractal.</p>
+          <p>Click RUN to run it!</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Menger Sponge</h2>
+        <p>- a 3D fractal of cubes!</p>
+        <iframe src="https://giphy.com/embed/ZFZBGwZwvlfKo" width="250px" height="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <pre>"In mathematics, the Menger sponge is a fractal curve. It is a three-dimensional generalization of the one-dimensional Cantor set and two-dimensional Sierpinski carpet. It was first described by Karl Menger in 1926, in his studies of the concept of topological dimension." <a href="https://en.wikipedia.org/wiki/Menger_sponge">Read more about Menger sponge</a></pre>
+      </section>
+
+      <section>
+        <iframe width="1200" height="560" src="https://www.youtube.com/embed/YpmP8OJJ7W4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="http://www.megamenger.com" target="_blank">International collaborative fractal building project!</a></p>
+      </section>
+
+      <section>
+        <h3>3D Model Fractal Patterns - Tools</h3>
+        <ul>
+          <ul> General CAD / Modeler (Manual)
+            <li><a href="https://www.sketchup.com‎" target="_blank">SketchUP</a></li>
+            <li><a href="https://www.blender.org" target="_blank">Blender</a></li>
+            <li><a href="https://www.autodesk.com" target="_blank">AUTO DESK</a></li>
+          </ul>
+          <br>
+          <ul> Fractal-Sepcifics (Automatic)
+            <li><a href="http://www.mandelbulb.com" target="_blank">Mandelbulb</a></li>
+            <li><a href="https://hirnsohle.de/test/fractalLab/" target="_blank">Fractal Lab</a></li>
+          </ul>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Building Process (Manual)</h3>
+        <img src="images/Mengersponge.gif" height="250px">
+        <br>
+        <ul>
+          <li>Construct Level 1</li>
+          <li>Construct Level 2 using Level 1</li>
+          <li>Construct Level 3 using Level 2</li>
+          <li>...</li>
+          <li>Construct Level N using Level N-1</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Building Process (Automatic)</h3>
+        <br>
+        <ul>
+          <li><a href="http://www.mandelbulb.com/2014/mandelbulb-3d-mb3d-tutorials/" target="_blank">Mandelbulb 3D tutorials</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>3D Printing Configuration</h3>
+        <br>
+        <ul>
+          <li>Rescale</li>
+          <li>Add supports to structure</li>
+          <li>Adjust Fill</li>
+          <li>Test Print</li>
+          <li>Finalize</li>
+        </ul>
+      </section>
+
     </div>
   </div>
 
