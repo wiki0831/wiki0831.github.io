@@ -19,7 +19,7 @@
   "homepage": "https://github.com/wiki0831/MagicMirror#readme",
   "dependencies": {
     "connect": "^3.6.6",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "nodemon": "^1.18.10",
     "serve-static": "^1.13.2"
   }
