@@ -10,9 +10,10 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
+googleAnalytics: G-3R0P11417N
 
 minify:
-  disableXML: true
+  disableXML: false
 
 languages:
   en:
@@ -30,13 +31,9 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-      footer:
-          - name: Terms
-            pageRef: /terms
-            weight: 10
-          - name: Privacy
-            pageRef: /privacy
-            weight: 20
+        - name: Posts
+          url: posts/
+          weight: 10
 
 outputs:
   home:
@@ -79,6 +76,7 @@ params:
     Content: >
       This is Wei!
       SDE @ Planet Labs 🌎
+      <iframe width="100%" height="450" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/BB-BBQ-yKrQufd8QcaDqtdXDps9AID"></iframe>
 
   socialIcons:
     - name: github
@@ -86,13 +84,13 @@ params:
     - name: linkedin
       url: "https://www.linkedin.com/in/wiki0831/"
 
-  assets:
-    disableHLJS: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+  # assets:
+  #   disableHLJS: true
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
 
 markup:
   goldmark:
@@ -101,7 +99,7 @@ markup:
   highlight:
     noClasses: false
     anchorLineNos: true
-    codeFences: true
+    # codeFences: true
     guessSyntax: true
     lineNos: true
     style: monokai
