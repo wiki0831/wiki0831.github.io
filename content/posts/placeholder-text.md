@@ -1,5 +1,4 @@
 ---
-author: "Wei"
 title: "Placeholder Text"
 date: "2023-06-14T23:06:27-04:00"
 description: "Lorem Ipsum Dolor Si Amet"

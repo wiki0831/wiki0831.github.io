@@ -31,8 +31,8 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: Posts
-          url: posts/
+        - name: Archive
+          url: archives/
           weight: 10
 
 outputs:
@@ -43,8 +43,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Wei - https://wiki0831.github.io"
-  author: Weiqi Yuan
+  description: "wei - https://wiki0831.github.io"
+  author: wei
 
   defaultTheme: auto
   disableThemeToggle: true
@@ -58,7 +58,8 @@ params:
   ShowRssButtonInSectionTermList: false
   ShowToc: true
   # comments: false
-  images: ["papermod-cover.png"]
+  images: ["resources/_gen/images/w_logo.png"]
+  label.icon: "resources/_gen/images/w_logo.png"
 
   profileMode:
     enabled: false
